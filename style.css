@@ -1,0 +1,66 @@
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-black-friday-assortment-black-background-with-copy-space_23-2148665581.jpg?t=st=1743865996~exp=1743869596~hmac=912d7c7d9c7a237aec9a2f608b53a74ef7467c4bf850a661cfed65aca5553511&w=1800');
+    background-size: cover;
+   background-repeat: no-repeat;
+  background-color: #f4f4f4; /* Fallback background color */   
+}
+
+h1 {
+    color: #f7fdfe;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.buttons {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+   background-color: aqua;
+   border-style: dotted; 
+}  
+
+.buttons button {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid rgb(4, 96, 88);
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.buttons button:hover {
+    background-color: #f96969;
+}
+
+.buttons button:active {
+    background-color: #25c15e;
+}
+
+.buttons button:last-child {
+    grid-column: span 1; /* Clears buttons */
+}
+
+.buttons button:nth-child(4n) {
+    background-color: #0ac288;
+}
+  
+.buttons button:nth-child(4n):hover {
+    background-color: #556eeb;
+}
+
+.buttons button:nth-child(16) {
+    grid-column: span 1; /* Equals button */
+}
